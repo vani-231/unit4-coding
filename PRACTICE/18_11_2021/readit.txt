@@ -1,0 +1,31 @@
+Rest(Reprsentational state transfer) API 
+HTTP VERBS 
+
+get --> get all items 
+get --> get single item
+post --> create a single item 
+patch/put --> update a single item
+delete --> delete a single item
+
+
+
+syntaxes ----> 
+
+npm init -y
+npm i express --> or --> npm install express
+change main in (package json file)  as app.js
+
+
+DISADVANTAGE OF GET
+     Limited capacity we can send only 2000 bytes data
+     evrything u send is visible in the request url passwords also.
+process of req and res
+
+req
+browser send req to os(operating system) and os send req to EXPRESS (B-->OS-->EXPRESS)
+
+EXPRESS send res to os(operating system) and os send res to Browser (EXPRESS-->OS-->Browser)
+
+we can also send requset in get HTML AND SCRIPT also.
+
+
