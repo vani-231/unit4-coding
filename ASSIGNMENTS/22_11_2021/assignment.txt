@@ -1,0 +1,33 @@
+use assignments
+
+db.createCollection("users")
+
+db.users.insert({first_name: "vani", last_name: "anigirappagari", email: "vani@gmail.com", gender: "Female", ip_address: "67.204.115.49", age: 21})
+
+db.users.find().pretty()
+
+db.users.insertMany([{first_name: "vani", last_name: "anigirappagari", email: "vani@gmail.com", gender: "Female", ip_address: "67.204.115.49", age: 21},
+... {first_name: "a", last_name: "aaa", email: "vani@gmail.com", gender: "male", ip_address: "25.191.125.115", age: 25},
+... {first_name: "b", last_name: "bbb", email: "a@gmail.com", gender: "Female", ip_address: "71.212.183.134", age: 41},
+... {first_name: "c", last_name: "c", email: "b@gmail.com", gender: "male", ip_address: "203.177.217.146", age: 61},
+... {first_name: "a", last_name: "ddd", email: "c@gmail.com", gender: "Female", ip_address: "93.100.58.118", age: 31},
+... {first_name: "e", last_name: "fff", email: "d@gmail.com", gender: "male", ip_address: "178.105.216.194", age: 51},
+... {first_name: "a", last_name: "aaa", email: "e@gmail.com", gender: "Female", ip_address:  "39.240.239.180", age: 35},
+... {first_name: "g", last_name: "bbb", email: "f@gmail.com", gender: "male", ip_address: "60.2.11.49", age: 27},
+... {first_name: "b", last_name: "fff", email: "g@gmail.com", gender: "Female", ip_address: "34.204.15.49", age: 43},
+... {first_name: "i", last_name: "iii", email: "h@gmail.com", gender: "male", ip_address: "567.204.105.49", age: 56},
+... {first_name: "k", last_name: "aaa", email: "k@gmail.com", gender: "male", ip_address: "77.29.115.49", age: 25},
+... {first_name: "b", last_name: "ddd", email: "i@gmail.com", gender: "male", ip_address: "986.204.345.49", age: 67}])
+
+db.users.findOne({first_name:"vani"})
+
+db.users.update({_id : ObjectId("61a70496aeac55643b1e0b78")},{$set: {email:"kerrthi@gmail.com"}})
+
+db.users.updateMany({last_name:"aaa"},{$set: {birth_place:"chittoor"}})
+
+db.users.remove({ _id : ObjectId("61a70496aeac55643b1e0b77")})
+
+db.users.deleteMany({gender:"male"})
+
+db.dropDatabase()
+
