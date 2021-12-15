@@ -1,3 +1,12 @@
 1. connect to mongodb server 
 2.create a schema for our data
 3. create a model from the schema
+
+
+Mongoose Relationships
+
+one to one relationship
+
+one to many relationship
+
+many to many relationship
