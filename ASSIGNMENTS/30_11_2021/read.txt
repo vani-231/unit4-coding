@@ -1,0 +1,27 @@
+AJAX -- ASYNCHRONOUS JS AND XML
+
+AJAX LOADING
+
+
+Pagination --> limiting the products for the page and skipping to another page.
+
+emails
+
+HTTP ---> hyper text transfer protocols
+
+SMTP ---> simple mail transfer protocol---> send emails from server to another
+
+POP3, IMAP--> use send mails from one client to another client
+
+page=1 skip(0) limit(2)---> (1-1)*2
+page=2 skip(2) limit(2) --->(2-1)*2
+skip items = (page-1)*size
+
+
+
+steps
+
+mailtrap.com 
+npm install nodemailer
+
+
