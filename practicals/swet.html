@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="node_modules/sweetalert2/dist/sweetalert2.css">
+
+  <style>
+    button {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif; 
+}
+  </style>
+</head>
+<body>
+  <button onclick="req()">heloooo!"</button>"
+  <p id = "arrival"></p>
+
+    
+</body>
+</html>
+
+<script src="node_modules/sweetalert2/dist/sweetalert2.all.min.js" ></script>
+<script type="text/javascript" >
+  function req(){
+    var arv  = ['Kolkata','West Bengal (WB)','Uttarakhand (UK)','Shahjahanpur',
+			'Sant Kabir Nagar',
+			'Siddharthnagar',
+			'Sonbhadra',
+			'Sant Ravidas Nagar',
+			'Sultanpur',
+			'Shravasti',
+			'Unnao',
+			'Varanasi','Ghazipur',
+			'Gorakhpur',
+			'Ghaziabad',
+			'Hamirpur','Agra',
+			'Allahabad',
+			'Aligarh',
+			'Ambedkar Nagar',
+			'Auraiya',
+			'Azamgarh',
+			'Barabanki',
+			'Budaun',
+			'Bagpat',
+			'Bahraich','Uttar Pradesh (UP)','Tiruvarur',
+			'Tiruvannamalai',
+			'Vellore',
+			'Viluppuram',
+			'Virudhunagar','Tripura (TR)',
+			'Dhalai',
+			'North Tripura',
+			'South Tripura',
+			'Khowai',
+			'West Tripura','Sikkim (SK)','Angul',
+			'Boudh (Bauda)',
+			'Bhadrak',
+			'Balangir',
+			'Bargarh (Baragarh)',
+			'Balasore',
+			'Cuttack','Ajmer',
+			'Alwar',
+			'Bikaner',
+			'Barmer',
+			'Banswara',
+			'Bharatpur',
+			'Baran',
+			'Bundi','Mumbai City',
+			'Mumbai suburban',
+			'Nandurbar',
+			'Nanded',
+			'Nagpur',
+			'Nashik',
+			'Osmanabad',
+			'Parbhani',
+			'Pune',
+			'Raigad',
+			'Ratnagiri',
+			'Sindhudurg','Alirajpur',
+			'Anuppur',
+			'Ashok Nagar',
+			'Balaghat',
+			'Barwani',
+			'Betul',
+			'Bhind',
+			'Bhopal',
+			'Burhanpur',
+			'Chhatarpur',
+			'Chhindwara','Alappuzha',
+			'Ernakulam',
+			'Idukki',
+			'Kannur',
+			'Kasaragod',
+			'Kollam',
+			'Kottayam',
+			'Kozhikode',
+			'Malappuram','Bagalkot',
+			'Bangalore Rural',
+			'Bangalore Urban',
+			'Belgaum',
+			'Bellary',
+			'Bidar',
+			'Bijapur','Bokaro',
+			'Chatra',
+			'Deoghar',
+			'Dhanbad',
+			'Dumka',
+			'East Singhbhum',
+			'Garhwa',
+			'Giridih',
+			'Godda',
+			'Gumla','Ahmedabad',
+			'Amreli district',
+			'Anand',
+			'Banaskantha',
+			'Bharuch',
+			'Bhavnagar',
+			'Dahod',
+			'The Dangs',
+			'Gandhinagar',
+			'Jamnagar',
+			'Junagadh','Goa (GA)','Central Delhi',
+			'East Delhi',
+			'New Delhi',
+			'North Delhi',
+			'North East Delhi',
+			'North West Delhi','Araria',
+			'Arwal',
+			'Aurangabad',
+			'Banka',
+			'Begusarai',
+			'Bhagalpur',
+			'Bhojpur',
+			'Buxar',
+			'Darbhanga','Baksa',
+			'Barpeta',
+			'Bongaigaon',
+			'Cachar',
+			'Chirang',
+			'Darrang',
+			'Dhemaji',
+			'Dima Hasao','Adilabad',
+			'Anantapur',
+			'Chittoor',
+			'Kakinada',
+			'Guntur',
+			'Hyderabad',
+			'Karimnagar',
+			'Khammam',
+			'Krishna',
+			'Kurnool',
+			'Mahbubnagar',
+			'Medak',
+			'Nalgonda',
+			'Nizamabad',
+			'Ongole',
+			'Hyderabad',
+			'Srikakulam','Anjaw',
+			'Changlang',
+			'East Siang',
+			'Kurung Kumey',
+			'Lohit',
+			'Lower Dibang Valley',
+			'Lower Subansiri',
+			'Papum Pare',
+			'Tawang',
+			'Tirap',
+			'Dibang Valley','Baksa',
+			'Barpeta',
+			'Bongaigaon',
+			'Cachar',
+			'Chirang',
+			'Darrang',
+			'Dhemaji',];
+        
+        var item = arv[Math.round(Math.random())]//*(arv.length-1))];
+        
+        
+    Swal.fire(
+        'Good job!',
+        'You clicked the button! '+ item,
+        'success'
+      )
+}
+
+</script>
